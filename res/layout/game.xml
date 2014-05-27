@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#faf8ef"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ankco.numfall.GameBoard$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/levelValue"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#bbada0"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="14sp" />
+
+    <TableLayout
+        android:id="@+id/scoreBoard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/levelValue"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center" >
+
+        <TableRow
+            android:id="@+id/tableRowValues"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#faf8ef"
+            android:weightSum="4" >
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#bbada0"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/highScore"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#bbada0"
+                android:gravity="center"
+                android:text="@string/high_score"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/star"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#bbada0"
+                android:gravity="center"
+                android:text="@string/star_symbol"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#bbada0"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textAllCaps="true"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableScores"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#faf8ef"
+            android:weightSum="4" >
+
+            <TextView
+                android:id="@+id/scoreValue"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#bbada0"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#eee4da"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/highScoreValue"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#bbada0"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#eee4da"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/starValue"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#bbada0"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#eee4da"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timeValue"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#bbada0"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#eee4da"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:background="#bbada0"
+        android:gravity="center"
+        android:padding="5dp" >
+    </TableLayout>
+
+    <TableRow
+        android:id="@+id/buttonRow"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/playpause"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="100dp"
+            android:background="#bbada0"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/restart"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="100dp"
+            android:background="#bbada0"
+            android:gravity="center"
+            android:text="@string/restart"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+    </TableRow>
+
+</RelativeLayout>

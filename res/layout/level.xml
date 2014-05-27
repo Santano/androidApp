@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEEE" >
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/background"
+        android:scaleType="center"
+        android:src="@drawable/backgrnd" />
+
+    <TextView
+        android:id="@+id/levelText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#EEEEEE"
+        android:fontFamily="sans-serif"
+        android:text="@string/levels"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" >
+    </TextView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/backToMenu"
+        android:layout_below="@+id/levelText"
+        android:layout_margin="20dp"
+        android:scrollbars="none" >
+
+        <TableLayout
+            android:id="@+id/levelLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:padding="5dp" >
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backToMenu"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/back_to_menu" />
+
+</RelativeLayout>

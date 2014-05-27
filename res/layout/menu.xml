@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/background"
+        android:scaleType="center"
+        android:src="@drawable/backgrnd" />
+
+    <!-- <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp" > -->
+    <!-- </TableLayout> -->
+
+        <TableRow
+            android:id="@+id/menuButtonLevel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/menuButtonHelp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="18dp" >
+
+            <Button
+                android:id="@+id/levelButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#eeeeee"
+                android:fontFamily="sans-serif"
+                android:text="@string/levelsButton"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/menuButtonHelp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="24dp" >
+
+            <Button
+                android:id="@+id/helpButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#eeeeee"
+                android:fontFamily="sans-serif"
+                android:text="@string/help"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/menuButtonPlay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@+id/menuButtonLevel"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="52dp" >
+
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#eeeeee"
+                android:fontFamily="sans-serif"
+                android:text="@string/playButton"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+        </TableRow>
+
+</RelativeLayout>

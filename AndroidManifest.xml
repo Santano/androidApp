@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.numfall"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ankco.numfall.GameBoard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ankco.numfall.MenuActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.numfall.MenuActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ankco.numfall.GamePlayActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.numfall.GamePlayActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ankco.numfall.HelpActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.numfall.HelpActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ankco.numfall.LevelActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.numfall.LevelActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name="com.ankco.numfall.LevelWonActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.numfall.LevelWonActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
